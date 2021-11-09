@@ -1,0 +1,8 @@
+body {
+	background-color: white;
+}
+
+@import "vendors/_bootstrap-grid.scss";
+@import "settings/_vars.scss";
+@import "settings/_mixins.scss";
+@import "base/_grid.scss";

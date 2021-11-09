@@ -1,0 +1,25 @@
+//------- Color -------//
+$color-evendarkerblack: #140e1f;
+$color-darkblack: #27252c;
+$color-lighterblack: #4b4654;
+
+//------- Media queries -------//
+$viewport-extra-small: 350px; // 350px
+$viewport-small: 576px; // 576px
+$viewport-medium: 992px; // 992px
+$viewport-large: 1025px; // 1025px
+$viewport-extra-large: 1440px; // 1200px
+$viewport-max: 1920px; // 1920px
+
+// spacing - (160px, 80px, 60px, 30px at 1400px width screen)
+$spacing-vertical-xl: 11.429vw;
+$spacing-vertical-l: 5.714vw;
+$spacing-vertical-m: 4.286vw;
+$spacing-vertical-s: 2.143vw;
+
+$base-spacing: 1rem;
+
+// layout - grid
+$grid-max-width: 1280px;
+$grid-max-content-width: 1615px;
+$grid-min-width: 370px;

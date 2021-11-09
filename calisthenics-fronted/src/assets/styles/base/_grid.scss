@@ -1,0 +1,28 @@
+$gutter-15: 2rem;
+
+// main grid wrap
+.main-grid {
+	@include grid;
+}
+
+.container {
+	width: 100%;
+	max-width: 100%;
+}
+
+@include viewport-custom-min(1200px) {
+	.gutter-xl-15 {
+		padding-right: 0;
+		padding-left: 0;
+
+		.row {
+			margin-right: -$gutter-15;
+			margin-left: -$gutter-15;
+		}
+
+		.row > * {
+			padding-right: $gutter-15;
+			padding-left: $gutter-15;
+		}
+	}
+}
