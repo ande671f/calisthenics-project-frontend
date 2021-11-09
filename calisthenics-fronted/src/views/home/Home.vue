@@ -3,7 +3,7 @@
 		<div class="container">
 			<div class="row">
 				<div v-if="reviews != null">
-				<ReviewList />
+				<ReviewList :reviews="reviews" />
 				</div>
 			</div>
 		</div>

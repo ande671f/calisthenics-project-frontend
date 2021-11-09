@@ -1,5 +1,5 @@
 import Hero from "@/components/hero/Hero.vue";
-import { defineComponent, ref } from "vue";
+import { defineComponent } from "vue";
 import ReviewList from "@/components/reviewlist/ReviewList.vue";
 
 export default defineComponent({

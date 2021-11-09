@@ -1,8 +1,8 @@
 <template>
-    <div v-if="reviews != null" class="row">
+    <div v-if="reviewList != null" class="reviewList row">
         <div class="col-12">
             <ul class="row">
-                <li v-for="(review, index) in reviews" :key="review"
+                <li v-for="(review, index) in reviewList" :key="review"
                     :class="[
                     {'col-4 offset-1':index===0},
                     {'col-4 offset-2':index===1},
@@ -13,5 +13,8 @@
                 </li>
             </ul>
         </div>
-    </div>
+        </div>
 </template>
+
+<script src="./ReviewList.ts"></script>
+<style lang="scss" src="./ReviewList.scss" scoped></style>

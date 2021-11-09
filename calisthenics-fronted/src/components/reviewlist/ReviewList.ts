@@ -5,9 +5,12 @@ export default defineComponent({
     name: "ReviewList",
 	components: { Review },
     props: {
+        reviews: Object as () => IReview[],
     },
-    setup() {
-        console.log("TEST");
-		return {};
+    setup(prop) {
+        const reviewList=ref(prop.reviews!)
+		return {
+            reviewList,
+        };
     }
 });
