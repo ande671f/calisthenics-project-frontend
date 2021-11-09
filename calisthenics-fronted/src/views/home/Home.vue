@@ -1,8 +1,11 @@
 <template>
-	<Hero />
 	<div class="main-grid">
 		<div class="container">
-			<div class="row"></div>
+			<div class="row">
+				<div v-if="reviews != null">
+				<ReviewList />
+				</div>
+			</div>
 		</div>
 	</div>
 </template>
