@@ -1,7 +1,9 @@
 import Hero from "@/components/hero/Hero.vue";
 import About from "@/components/about/About.vue";	
-import { defineComponent } from "vue";
+import { defineComponent, onMounted, ref } from "vue";
 import ReviewList from "@/components/reviewlist/ReviewList.vue";
+import cms from "@/resources/CMSResource";
+import { frontPageQuery } from "@/queries/FrontPageQuery";
 
 export default defineComponent({
 	name: "Home",
@@ -11,16 +13,25 @@ export default defineComponent({
 		ReviewList,
 	},
 	setup() {
-		const review1: IReview = {name: "Anders", message: "Jeg kan godt lide pecs"};
-		const review2: IReview = {name: "Anders", message: "Jeg kan godt lide pecs"};
-		const review3: IReview = {name: "Anders", message: "Jeg kan godt lide pecs"};
-		const review4: IReview = {name: "Anders", message: "Jeg kan godt lide pecs"};
 
-		const reviews: IReview[] = [review1, review2, review3, review4];
+		const frontPage = ref<IFrontPage>();
 
-		console.log("RRRRRRRRRRRRRRRRRRRRRRRRRRRRR", reviews)
+		// getting frontpage query
+		const getFrontPage = async () => {
+			cms.getDataAsync<IFrontPageResponse>(frontPageQuery).then((response) => {
+				console.log("response:", response.data?.frontPageCollection.items[0]);
+				frontPage.value = response.data?.frontPageCollection.items[0] || undefined;
+				console.log("frontpage value:", frontPage.value)
+			});
+		};
+		
+		// lifecycle hook which gets run when setup() runs
+		onMounted(() => {
+			getFrontPage();
+		})
+
 		return {
-			reviews,
+			frontPage,
 		};
 	},
 });
