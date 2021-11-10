@@ -1,3 +1,4 @@
+import About from "@/components/about/About.vue";
 import Hero from "@/components/hero/Hero.vue";
 import About from "@/components/about/About.vue";	
 import { defineComponent, onMounted, ref } from "vue";
