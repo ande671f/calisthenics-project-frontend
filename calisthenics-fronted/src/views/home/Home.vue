@@ -2,11 +2,19 @@
 	<div class="main-grid">
 		<div class="container">
 			<div class="row">
-					<About />
+				<Hero />
+			</div>
+			<div class="row">
+				<div class="col">
+					<navigation-white />
+				</div>
+			</div>
+			<div class="row">
+				<About />
 			</div>
 			<div class="row">
 				<div v-if="reviews != null">
-				<ReviewList :reviews="reviews" />
+					<ReviewList :reviews="reviews" />
 				</div>
 			</div>
 		</div>
