@@ -2,7 +2,7 @@ declare interface IFrontPage {
     title: string;
     manchet: string;
     about: string;
-    aboutImage: string;
+    aboutTitle: string;
 
     reviewCollection: GraphQLCollection<IReview>;
 }

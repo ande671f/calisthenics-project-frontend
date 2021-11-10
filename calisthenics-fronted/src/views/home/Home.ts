@@ -1,6 +1,6 @@
 import About from "@/components/about/About.vue";
 import Hero from "@/components/hero/Hero.vue";
-import About from "@/components/about/About.vue";	
+//import About from "@/components/about/About.vue";	
 import { defineComponent, onMounted, ref } from "vue";
 import ReviewList from "@/components/reviewlist/ReviewList.vue";
 import cms from "@/resources/CMSResource";

@@ -7,8 +7,12 @@
 				Your browser does not support the video tag.
 			</video>
 			<div class="hero__content col-12">
-				<h1>ODENSE CALISTHENICS</h1>
-				<h2>HER FÅR DU VERDENS BEDSTE TRÆNING</h2>
+				<h1 v-if="title != null">
+					{{title}}
+				</h1>
+				<h2 v-if="manchet != null">
+					{{manchet}}
+				</h2>
 			</div>
 		</div>
 	</div>

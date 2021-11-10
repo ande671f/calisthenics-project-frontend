@@ -3,18 +3,21 @@
 	<div class="main-grid">
 		<div class="container">
 			<div class="row">
-				<Hero />
+				<Hero 
+					:propTitle="frontPage.title"
+					:propManchet="frontPage.manchet"
+				/>
 			</div>
-				<h1>
-					{{frontPage.title}}
-				</h1>
 			<div class="row">
 				<div class="col">
 					<navigation-white />
 				</div>
 			</div>
 			<div class="row">
-				<About />
+				<About
+					:propAboutTitle="frontPage.aboutTitle"
+					:propAbout="frontPage.about"
+				 />
 			</div>
 			<div class="row">
 				<div v-if="reviews != null">
