@@ -16,6 +16,11 @@
 					<ReviewList :reviews="reviews" />
 				</div>
 			</div>
+			<div class="row">
+				<h1>
+					{{currentUser}}
+				</h1>
+			</div>
 		</div>
 	</div>
 </template>
