@@ -5,7 +5,7 @@
 			<div class="row"></div>
 			<div class="row">
 				<div class="col">
-					<navigation-black />
+					<navigation-white />
 				</div>
 			</div>
 			<div class="row">
