@@ -1,3 +1,3 @@
 declare interface System {
-    id: string;
+	id: string;
 }
