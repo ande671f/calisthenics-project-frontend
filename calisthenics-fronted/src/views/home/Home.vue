@@ -1,21 +1,25 @@
 <template>
-	<div class="main-grid">
+	<div v-if="frontPage != undefined">
+		<Hero :title="frontPage.title" :manchet="frontPage.manchet" />
 		<div class="container">
-			<div class="row">
-				<Hero />
-			</div>
+			<div class="row"></div>
 			<div class="row">
 				<div class="col">
 					<navigation-white />
 				</div>
 			</div>
 			<div class="row">
-				<About />
+				<About :propAboutTitle="frontPage.aboutTitle" :propAbout="frontPage.about" />
 			</div>
 			<div class="row">
 				<div v-if="reviews != null">
 					<ReviewList :reviews="reviews" />
 				</div>
+			</div>
+			<div class="row">
+				<h1>
+					{{currentUser}}
+				</h1>
 			</div>
 		</div>
 	</div>

@@ -1,4 +1,6 @@
-declare interface IReview{
-        name:string;
-        message:string;
-}[];
+declare interface IReview {
+	name: string;
+	message: string;
+	sys: System;
+}
+[];
