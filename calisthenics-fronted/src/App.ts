@@ -1,11 +1,14 @@
 import { computed, defineComponent, onBeforeMount } from "vue";
 import { useStore } from "vuex";
+import Footer from "./components/footer/Footer.vue";
 import { auth } from "./firebase";
 import { key } from "./store";
 
 export default defineComponent({
 	name: "App",
-	components: {},
+	components: {
+		Footer,
+	},
 	setup() {
 		const store = useStore(key);
 

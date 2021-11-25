@@ -5,6 +5,9 @@
 			<h1>{{ forumMember }}</h1>
 		</div>
 	</div>
+	<div>
+		<Footer />
+	</div>
 </template>
 
 <script src="./App.ts"></script>
