@@ -8,8 +8,8 @@ export default defineComponent({
 		reviews: Object as () => IReview[],
 	},
 	setup(prop) {
-		const reviews = ref(prop.reviews!);
-		console.log("reviews", reviews);
+		const reviews = ref<IReview[]>(prop.reviews!);
+
 		return {
 			reviews,
 		};

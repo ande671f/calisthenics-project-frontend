@@ -7,7 +7,6 @@ export default defineComponent({
 	},
 	setup(prop) {
 		const review = ref(prop.review!);
-		console.log("review", review);
 		return {
 			review,
 		};
