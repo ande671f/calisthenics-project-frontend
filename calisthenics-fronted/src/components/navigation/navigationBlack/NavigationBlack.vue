@@ -7,12 +7,15 @@
 			<div class="col-7">
 				<div class="navigation__menuItems">
 					<router-link to="/" class="navigation__menuItem">TRÆNERE</router-link>
-					<router-link to="/" class="navigation__menuItem">BOOKING</router-link>
 					<router-link to="/" class="navigation__menuItem">FORUM</router-link>
 					<router-link to="/" class="navigation__menuItem">BLIV MEDLEM</router-link>
-					<button @click="logout">LOG UD</button>
-					<router-link to="/login" class="navigation__menuItem">LOGIN</router-link>
-					<router-link to="/register" class="navigation__menuItem">OPRET</router-link>
+					<span v-if="loggedInForumMember != null">
+						<button @click="logout">LOG UD</button>
+					</span>
+					<span v-else>
+						<router-link to="/login" class="navigation__menuItem">LOGIN</router-link>
+						<router-link to="/register" class="navigation__menuItem">OPRET</router-link>
+					</span>
 				</div>
 			</div>
 		</div>
