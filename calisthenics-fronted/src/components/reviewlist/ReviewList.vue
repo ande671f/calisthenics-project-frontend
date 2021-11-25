@@ -3,6 +3,11 @@
 		<div class="row">
 			<div class="reviewList col-10 offset-1">
 				<div class="row">
+					<div class="reviewList__title">
+						<h1>Det siger de om os</h1>
+					</div>
+				</div>
+				<div class="row">
 					<ul class="row">
 						<li
 							v-for="(review, index) in reviews.items"

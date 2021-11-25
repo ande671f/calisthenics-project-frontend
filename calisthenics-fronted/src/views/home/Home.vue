@@ -14,6 +14,9 @@
 			<div class="row">
 				<ReviewList :reviews="frontPage.reviewsCollection" />
 			</div>
+			<div class="row">
+				<ContactUs />
+			</div>
 		</div>
 	</div>
 </template>
