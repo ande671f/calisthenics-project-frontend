@@ -1,17 +1,8 @@
 <template>
-	<div v-if="reviewList != null" class="reviewList row">
-		<div class="col-12">
-			<ul class="row">
-				<li
-					v-for="(review, index) in reviewList"
-					:key="review"
-					:class="[
-						{ 'col-4 offset-1': index === 0 },
-						{ 'col-4 offset-2': index === 1 },
-						{ 'col-4 offset-1': index === 2 },
-						{ 'col-4 offset-2': index === 3 },
-					]"
-				>
+	<div class="row">
+		<div v-if="reviews != undefined" class="reviewList col-12">
+			<ul>
+				<li v-for="review in reviews" :key="review">
 					<Review :Review="review" />
 				</li>
 			</ul>

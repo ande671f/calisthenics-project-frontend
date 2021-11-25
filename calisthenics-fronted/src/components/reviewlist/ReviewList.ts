@@ -8,9 +8,10 @@ export default defineComponent({
 		reviews: Object as () => IReview[],
 	},
 	setup(prop) {
-		const reviewList = ref(prop.reviews!);
+		const reviews = ref(prop.reviews!);
+		console.log("reviews", reviews);
 		return {
-			reviewList,
+			reviews,
 		};
 	},
 });

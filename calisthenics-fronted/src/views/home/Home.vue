@@ -12,9 +12,7 @@
 				<About :propAboutTitle="frontPage.aboutTitle" :propAbout="frontPage.about" />
 			</div>
 			<div class="row">
-				<div v-if="reviews != null">
-					<ReviewList :reviews="frontpage.reviews" />
-				</div>
+				<ReviewList :reviews="frontPage.reviewsCollection" />
 			</div>
 		</div>
 	</div>
