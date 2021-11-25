@@ -1,4 +1,5 @@
 import About from "@/components/about/About.vue";
+import Footer from "@/components/footer/Footer";
 import Hero from "@/components/hero/Hero.vue";
 import ReviewList from "@/components/reviewlist/ReviewList.vue";
 import { frontPageQuery } from "@/queries/FrontPageQuery";
@@ -14,6 +15,7 @@ export default defineComponent({
 		Hero,
 		About,
 		ReviewList,
+		Footer,
 	},
 	setup() {
 		const store = useStore(key);

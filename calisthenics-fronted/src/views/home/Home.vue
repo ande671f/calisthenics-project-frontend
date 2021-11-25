@@ -16,6 +16,9 @@
 					<ReviewList :reviews="frontpage.reviews" />
 				</div>
 			</div>
+			<div class="row">
+				<Footer />
+			</div>
 		</div>
 	</div>
 </template>

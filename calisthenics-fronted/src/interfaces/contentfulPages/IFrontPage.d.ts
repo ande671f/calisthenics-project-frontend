@@ -1,12 +1,12 @@
 declare interface IFrontPage {
-    title: string;
-    manchet: string;
-    about: string;
-    aboutTitle: string;
+	title: string;
+	manchet: string;
+	about: string;
+	aboutTitle: string;
 
-    reviewCollection: GraphQLCollection<IReview>;
+	reviewCollection: GraphQLCollection<IReview>;
 }
 
 declare interface IFrontPageResponse {
-    frontPageCollection: GraphQLCollection<IFrontPage>
+	frontPageCollection: GraphQLCollection<IFrontPage>;
 }
