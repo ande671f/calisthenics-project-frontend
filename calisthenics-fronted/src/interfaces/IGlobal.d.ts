@@ -21,3 +21,5 @@ declare interface GraphQLPage {
 declare interface GraphQLCollection<T> {
 	items: T[];
 }
+
+declare module "uuid";

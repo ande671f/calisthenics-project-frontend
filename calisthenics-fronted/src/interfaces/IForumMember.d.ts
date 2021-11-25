@@ -1,5 +1,12 @@
 declare interface IForumMember {
-	id: number;
+	forumMemberId: string;
 	name: string;
 	email: string;
+	communityMember: ICommunityMember | null;
+}
+
+declare interface IForumMemberPost {
+	name: string;
+	email: string;
+	communityMember: ICommunityMember | null;
 }
