@@ -8,7 +8,7 @@
 				<div class="navigation__menuItems">
 					<router-link to="/" class="navigation__menuItem">TRÆNERE</router-link>
 					<router-link to="/" class="navigation__menuItem">FORUM</router-link>
-					<router-link to="/" class="navigation__menuItem">BLIV MEDLEM</router-link>
+					<router-link to="/registerCommunityMember" class="navigation__menuItem">BLIV MEDLEM</router-link>
 					<span v-if="loggedInForumMember != null">
 						<button @click="logout">LOG UD</button>
 					</span>

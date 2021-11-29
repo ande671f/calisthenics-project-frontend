@@ -1,0 +1,49 @@
+@import "../../assets/styles/settings/fonts.scss";
+@import "../../assets//styles/settings/vars.scss";
+
+* {
+	box-sizing: border-box;
+}
+
+.registerFormular {
+	@include font-raleway-bold;
+	margin-top: 24px;
+	padding: 0;
+
+	&__title {
+		text-align: center;
+	}
+
+	&__information {
+		text-align: center;
+	}
+
+	&__inputField {
+		input {
+			padding: 24px;
+			width: 100%;
+			font-style: italic;
+			margin-top: 24px;
+			border: none;
+			background-color: $color-cardbackground;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		}
+	}
+
+	&__button {
+		button {
+			margin-top: 24px;
+			width: 100%;
+			padding: 24px;
+			border: none;
+			font-size: 20px;
+			@include font-raleway-bold;
+			background-color: $color-buttonbackground;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		}
+
+		button:hover {
+			background-color: $color-buttonbackgroundhover;
+		}
+	}
+}
