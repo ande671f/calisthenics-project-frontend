@@ -4,7 +4,7 @@
 		<div class="container">
 			<div class="row"></div>
 			<div class="row">
-				<div class="col">
+				<div class="col-12">
 					<navigation-white />
 				</div>
 			</div>
@@ -12,14 +12,10 @@
 				<About :propAboutTitle="frontPage.aboutTitle" :propAbout="frontPage.about" />
 			</div>
 			<div class="row">
-				<div v-if="reviews != null">
-					<ReviewList :reviews="reviews" />
-				</div>
+				<ReviewList :reviews="frontPage.reviewsCollection" />
 			</div>
 			<div class="row">
-				<h1>
-					{{ currentUser }}
-				</h1>
+				<ContactUs />
 			</div>
 		</div>
 	</div>

@@ -1,39 +1,35 @@
+@import "../../../assets/styles/settings/fonts.scss";
+@import "../../../assets//styles/settings/vars.scss";
+
 .navigation {
+	padding: 16px;
 	list-style: none;
 	text-decoration: none;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	display: inline-block;
 	z-index: 99999;
 	height: 80px;
 	width: 100%;
 
 	&__logo {
-		padding: 0px;
-		float: left;
+		padding: 0 10px 0 10px;
+		font-size: 24px;
 		color: white;
-		font-size: 35px;
-		font-weight: 600;
-		line-height: 100px;
-		margin: 0 0 0 60px;
-	}
-
-	ul {
-		float: right;
-		margin: 0 60px 0 0;
-	}
-
-	ul li {
-		display: inline-block;
-		color: white;
-		font-size: 15px;
-		font-weight: bold;
-		line-height: 100px;
-		padding: 0 30px;
-		letter-spacing: 2px;
-	}
-
-	ul li a {
-		color: white;
+		list-style: none;
 		text-decoration: none;
+		@include font-raleway-bold;
+	}
+
+	&__menuItems {
+		width: 100%;
+		display: flex;
+		justify-content: right;
+	}
+
+	&__menuItem {
+		padding: 0 10px 0 10px;
+		color: white;
+		list-style: none;
+		text-decoration: none;
+		@include font-raleway-bold;
 	}
 }

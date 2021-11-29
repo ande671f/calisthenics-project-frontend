@@ -1,8 +1,24 @@
-.review{
-    background-color: aqua;
-    width: 100%;
-    height: 200px;
-    text-decoration: none;
-    list-style: none;
+@import "../../../assets/styles/settings/fonts.scss";
+@import "../../../assets//styles/settings/vars.scss";
 
+.review {
+	margin-bottom: 35px;
+	padding: 30px;
+	height: 240px;
+	background-color: $color-cardbackground;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	text-align: center;
+
+	&__name {
+		@include font-raleway-bold;
+		font-size: 15px;
+		color: $color-bluefont;
+	}
+
+	&__message {
+		@include font-raleway-regular;
+		font-size: 20px;
+		display: flex;
+		justify-content: center;
+	}
 }
