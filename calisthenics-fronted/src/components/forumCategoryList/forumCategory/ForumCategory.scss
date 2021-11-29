@@ -1,0 +1,25 @@
+@import "../../../assets/styles/settings/fonts.scss";
+@import "../../../assets//styles/settings/vars.scss";
+
+.forumCategory {
+	padding: 32px;
+	background-color: $color-cardbackground;
+	height: fit-content;
+	margin-top: 32px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+	&__title {
+		@include font-raleway-bold;
+		color: $color-bluefont;
+	}
+
+	&__description {
+		@include font-raleway-regular;
+	}
+
+	&__icon {
+		img {
+			width: 100%;
+		}
+	}
+}

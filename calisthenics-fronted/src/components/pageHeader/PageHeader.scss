@@ -1,0 +1,9 @@
+@import "../../assets/styles/settings/fonts.scss";
+@import "../../assets//styles/settings/vars.scss";
+
+.title {
+	text-align: center;
+	@include font-raleway-bold;
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
