@@ -1,0 +1,38 @@
+@import "../../../assets/styles/settings/fonts.scss";
+@import "../../../assets//styles/settings/vars.scss";
+
+.forumPost {
+	background-color: $color-cardbackground;
+	height: fit-content;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	margin-bottom: 3px;
+	display: flex;
+	align-items: center;
+	@include font-raleway-regular;
+	text-overflow: ellipsis;
+
+	&__title {
+		@include font-raleway-bold;
+	}
+
+	&__description {
+		@include font-raleway-regular;
+	}
+
+	&__icon {
+		display: flex;
+		justify-content: center;
+
+		img {
+			width: 30%;
+		}
+	}
+
+	&__date {
+	}
+
+	&__author {
+		@include font-raleway-regular;
+		color: $color-bluefont;
+	}
+}

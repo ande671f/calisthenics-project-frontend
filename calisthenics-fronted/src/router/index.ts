@@ -1,5 +1,6 @@
 import Admin from "@/views/admin/Admin.vue";
 import Forum from "@/views/forum/Forum.vue";
+import ForumPosts from "@/views/forumPosts/ForumPosts.vue";
 import RegisterCommunityMember from "@/views/registerCommunityMember/RegisterCommunityMember.vue";
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 import Home from "../views/home/Home.vue";
@@ -31,6 +32,11 @@ const routes: Array<RouteRecordRaw> = [
 		path: "/forum",
 		name: "Forum",
 		component: Forum,
+	},
+	{
+		path: "/posts",
+		name: "Posts",
+		component: ForumPosts,
 	},
 	{
 		path: "/registerCommunityMember",
