@@ -1,4 +1,5 @@
 <template>
+	<div></div>
 	<div class="container">
 		<div class="col-12">
 			<div class="row">
@@ -9,6 +10,9 @@
 			</div>
 			<div class="row">
 				<forum-post-list />
+			</div>
+			<div v-if="forumCategoryId != undefined">
+				<h1>{{ forumCategoryId }}</h1>
 			</div>
 		</div>
 	</div>
