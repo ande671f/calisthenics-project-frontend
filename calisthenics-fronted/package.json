@@ -10,6 +10,7 @@
 	"dependencies": {
 		"axios": "^0.24.0",
 		"contentful-management": "^7.45.0",
+		"emailjs-com": "^3.2.0",
 		"firebase": "^9.5.0",
 		"graphql": "^16.0.1",
 		"graphql-request": "^3.6.1",
