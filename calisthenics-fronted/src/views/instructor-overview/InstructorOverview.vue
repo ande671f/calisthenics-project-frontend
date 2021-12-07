@@ -8,7 +8,7 @@
 		<div class="instructors col-12">
 			<div class="row">
 				<div class="instructors__title">
-					<h1>Instruktører</h1>
+					<h1>Mød vores instruktører</h1>
 				</div>
 				<div v-if="instructorsPage != undefined">
 					<InstructorList :instructors="instructorsPage.instructorsCollection" />
