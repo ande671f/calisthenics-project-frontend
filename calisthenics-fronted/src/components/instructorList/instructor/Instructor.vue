@@ -2,10 +2,17 @@
 	<div class="col-12">
 		<div class="row">
 			<div v-if="instructor != null" class="instructor">
-				<div class="instructor__name">
-					<h1>Jeppe Birkebæk Truelsen</h1>
+				<img
+					:src="instructor.profileImage.url"
+					alt="Instructor"
+					class="instructor__image"
+					style="width: 100%"
+				/>
+				<h1 class="instructor__name">{{ instructor.name }}</h1>
+				<h1 class="instructor__age">{{ instructor.age }} ÅR</h1>
+				<div class="middle">
+					<p class="instructor__description">Om {{ instructor.name }}: <br />{{ instructor.description }}</p>
 				</div>
-				<div class="instructor__bio">Jeppe is over 9000!!</div>
 			</div>
 		</div>
 	</div>
