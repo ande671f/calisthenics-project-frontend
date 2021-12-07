@@ -35,7 +35,7 @@ const routes: Array<RouteRecordRaw> = [
 		component: Forum,
 	},
 	{
-		path: "/posts",
+		path: "/forum/:forumCategoryId",
 		name: "Posts",
 		component: ForumPosts,
 	},

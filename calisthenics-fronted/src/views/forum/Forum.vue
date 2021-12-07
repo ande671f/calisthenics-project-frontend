@@ -8,7 +8,9 @@
 				<page-header :title="title" />
 			</div>
 			<div class="row">
-				<forum-category-list :forumCategoryList="forumCategoryList" />
+				<div v-if="forumCategoryList != undefined">
+					<forum-category-list :forumCategoryList="forumCategoryList" />
+				</div>
 			</div>
 		</div>
 	</div>

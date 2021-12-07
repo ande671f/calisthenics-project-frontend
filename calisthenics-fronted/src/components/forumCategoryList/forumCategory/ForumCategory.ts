@@ -8,7 +8,6 @@ export default defineComponent({
 
 	setup(prop) {
 		const category = ref(prop.category!);
-		console.log(category, "hej anedrs");
 
 		return {
 			category,
