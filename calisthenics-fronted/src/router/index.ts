@@ -5,6 +5,7 @@ import ForumPosts from "@/views/forumPosts/ForumPosts.vue";
 import RegisterCommunityMember from "@/views/registerCommunityMember/RegisterCommunityMember.vue";
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 import Home from "../views/home/Home.vue";
+import InstructorOverview from "../views/instructor-overview/InstructorOverview.vue";
 import Login from "../views/login/Login.vue";
 import Register from "../views/register/Register.vue";
 
@@ -48,6 +49,11 @@ const routes: Array<RouteRecordRaw> = [
 		path: "/registerCommunityMember",
 		name: "RegisterCommunityMember",
 		component: RegisterCommunityMember,
+	},
+	{
+		path: "/instructors",
+		name: "Instructors",
+		component: InstructorOverview,
 	},
 ];
 

@@ -1,0 +1,19 @@
+@import "../../assets/styles/settings/fonts.scss";
+@import "../../assets//styles/settings/vars.scss";
+
+.instructorList {
+	@include font-raleway-regular;
+
+	&__title {
+		text-align: center;
+		margin-bottom: 35px;
+	}
+
+	ul {
+		list-style-type: none;
+	}
+
+	&__review {
+		background-color: $color-cardbackground;
+	}
+}

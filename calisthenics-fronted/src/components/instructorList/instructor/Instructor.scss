@@ -1,0 +1,51 @@
+@import "../../../assets/styles/settings/fonts.scss";
+@import "../../../assets//styles/settings/vars.scss";
+
+.instructor {
+	height: 530px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	text-align: center;
+
+	&__name {
+		@include font-raleway-bold;
+		padding-top: 20px;
+		font-size: 20px;
+		color: $color-bluefont;
+	}
+
+	&__age {
+		@include font-raleway-bold;
+		font-size: 15px;
+		color: $color-bluefont;
+	}
+
+	&__description {
+		@include font-raleway-regular;
+		font-size: 15px;
+		background-color: #172122;
+		color: white;
+		font-size: 16px;
+		padding: 16px 32px;
+	}
+	&__image {
+		opacity: 1;
+		display: block;
+		width: 100%;
+		height: auto;
+		transition: 0.5s ease;
+		backface-visibility: hidden;
+	}
+}
+
+.middle {
+	transition: 0.5s ease;
+	opacity: 0;
+	top: 50%;
+	left: 50%;
+	transform: translate(0%, -125%);
+	-ms-transform: translate(0%, -125%);
+}
+
+.middle:hover {
+	opacity: 0.9;
+}
