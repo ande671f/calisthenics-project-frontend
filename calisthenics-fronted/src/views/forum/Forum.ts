@@ -12,6 +12,7 @@ export default defineComponent({
 	},
 	setup() {
 		const title = "Forum";
+
 		return {
 			title,
 		};

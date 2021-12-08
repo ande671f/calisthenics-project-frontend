@@ -14,7 +14,6 @@ export const store = createStore<State>({
 	},
 	mutations: {
 		setForumMember(state, val) {
-			console.log("HALLO VI SÆTTER DEN NU", val);
 			state.forumMember = val;
 		},
 	},
@@ -22,7 +21,6 @@ export const store = createStore<State>({
 		async getForumMember({ commit }, id: string) {
 			LoginService.getForumMember(id)
 				.then((response) => {
-					console.log(response);
 					commit("setForumMember", response);
 				})
 				.catch((error) => {

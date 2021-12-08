@@ -23,10 +23,10 @@ class LoginService {
 			});
 	}
 
-	public async getForumMember(id: string): Promise<IForumMember[]> {
+	public async getForumMember(id: string): Promise<IForumMember> {
 		const controller = "ForumMember";
 		return axios
-			.get<IForumMember[]>(`${this.baseURL}/${controller}/${id}`)
+			.get<IForumMember>(`${this.baseURL}/${controller}/${id}`)
 			.then((response) => {
 				return response.data;
 			})

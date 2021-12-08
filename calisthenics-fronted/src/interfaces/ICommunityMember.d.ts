@@ -4,13 +4,8 @@ declare interface ICommunityMember {
 	address: string;
 	postalCode: string;
 	city: string;
+	isInstructor: boolean;
 	forumMemberId: string;
-}
 
-declare interface ICommunityMemberPost {
-	phoneNumber: string;
-	address: string;
-	postalCode: string;
-	city: string;
-	forumMemberId: string;
+	workouts: IWorkout[] | null;
 }

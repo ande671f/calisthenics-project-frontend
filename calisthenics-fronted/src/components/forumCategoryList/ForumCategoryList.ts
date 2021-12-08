@@ -6,9 +6,7 @@ export default defineComponent({
 	components: {
 		ForumCategory,
 	},
-	props: {
-		forumCategoryList: Object as () => IForumCategory[],
-	},
+	props: {},
 
 	setup(prop) {
 		//const forumCategoryList = ref<IForumCategory[]>(prop.forumCategoryList!);
@@ -36,7 +34,6 @@ export default defineComponent({
 		];
 		return {
 			categories,
-			//forumCategoryList,
 		};
 	},
 });

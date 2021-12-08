@@ -19,9 +19,7 @@ export default defineComponent({
 		onBeforeMount(() => {
 			auth.onAuthStateChanged((user) => {
 				if (!user) {
-					console.log("DER ER INGEN BRUGER HER!");
 				} else {
-					console.log("JEG SÆTTER DIN BRUGER NU");
 					store.dispatch("getForumMember", user.uid);
 				}
 			});

@@ -51,6 +51,13 @@
 							id="forumMemberId"
 							disabled
 						/>
+						<br />
+						<label for="isInstructor">Er instruktør?:</label>
+						<input
+							type="checkbox"
+							v-model="selectedForumMember.communityMember.isInstructor"
+							id="isInstructor"
+						/>
 					</form>
 					<button @click="updateCommunityMember">Opdatere foreningsmedlem</button>
 					<button @click="deleteCommunityMember">Slet som foreningsmedlem</button>

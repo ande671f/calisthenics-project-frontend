@@ -8,7 +8,7 @@
 				<page-header :title="title" />
 			</div>
 			<div class="row">
-				<forum-category-list :forumCategoryList="forumCategoryList" />
+				<forum-category-list />
 			</div>
 		</div>
 	</div>
