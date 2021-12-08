@@ -1,0 +1,9 @@
+@import "../../../../assets/styles/settings/fonts.scss";
+@import "../../../../assets//styles/settings/vars.scss";
+
+.forumComment {
+	background-color: $color-cardbackground;
+	height: fit-content;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	margin-bottom: 3px;
+}

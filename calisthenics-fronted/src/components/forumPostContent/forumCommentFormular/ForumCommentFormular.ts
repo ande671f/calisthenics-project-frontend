@@ -1,7 +1,7 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
-	name: "ForumCommentList",
+	name: "ForumCommentFormular",
 
 	setup() {
 		return {};
