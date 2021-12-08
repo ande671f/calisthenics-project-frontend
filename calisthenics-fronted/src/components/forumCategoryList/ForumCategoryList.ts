@@ -1,4 +1,4 @@
-import { defineComponent, ref } from "vue";
+import { defineComponent } from "vue";
 import ForumCategory from "./forumCategory/ForumCategory.vue";
 
 export default defineComponent({
@@ -9,8 +9,8 @@ export default defineComponent({
 	props: {},
 
 	setup(prop) {
-		const forumCategoryList = ref<IForumCategory[]>(prop.forumCategoryList!);
-		/* const categories: IForumCategory[] = [
+		// const forumCategoryList = ref<IForumCategory[]>(prop.forumCategoryList!);
+		const forumCategoryList: IForumCategory[] = [
 			{
 				forumCategoryId: "1",
 				title: "Træningsvideor",
@@ -31,7 +31,7 @@ export default defineComponent({
 				title: "Foreningsspørgsmål",
 				description: "Her har du mulighed for at dele og oprette opslag med dine træningsvideoer",
 			},
-		]; */
+		];
 		return {
 			//categories,
 			forumCategoryList,
