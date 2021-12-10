@@ -4,11 +4,12 @@
 			<div class="forumCommentForumlar">
 				<div class="forumCommentFormular__inputField col-12">
 					<div class="">
-						<textarea type="text" placeholder="Besked..." />
+						<textarea v-model="description" type="text" placeholder="Besked..." />
 					</div>
 				</div>
+				<div></div>
 				<div class="forumCommentFormular__button col-2">
-					<button @click="Send">Send</button>
+					<button @click="createForumComment">Send</button>
 				</div>
 			</div>
 		</div>

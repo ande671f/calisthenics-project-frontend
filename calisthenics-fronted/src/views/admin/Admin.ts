@@ -6,6 +6,7 @@ export default defineComponent({
 	setup() {
 		const forumMembers = ref<IForumMember[]>();
 		const selectedForumMember = ref<IForumMember>();
+		const newForumCategory = ref<IForumCategory>();
 
 		const getForumMembers = async () => {
 			AdminService.getForumMembers().then((response) => {
@@ -53,6 +54,18 @@ export default defineComponent({
 			);
 		};
 
+		const createForumCategory = async () => {
+			AdminService.createForumCategory(
+				newForumCategory.value?.forumCategoryId!,
+				newForumCategory.value?.title!,
+				newForumCategory.value?.description!
+			).then((response) => {
+				if (newForumCategory.value != null) {
+					newForumCategory.value = response;
+				}
+			});
+		};
+
 		onMounted(() => {
 			getForumMembers();
 		});
@@ -64,6 +77,8 @@ export default defineComponent({
 			createCommunityMember,
 			updateCommunityMember,
 			deleteCommunityMember,
+			createForumCategory,
+			newForumCategory,
 		};
 	},
 });

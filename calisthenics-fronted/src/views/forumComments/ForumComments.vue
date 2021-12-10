@@ -4,17 +4,17 @@
 			<div class="row">
 				<navigation-black />
 			</div>
-			<div class="row">
-				<forum-post-details />
+			<div v-if="forumPost != undefined" class="row">
+				<forum-post-details :forumPostDetails="forumPost" />
 			</div>
 			<div class="row">
-				<page-header :title="pageHeaderTitle" />
+				<page-header :title="pageHeaderTitle" style="text-align: left" />
+			</div>
+			<div v-if="forumComments != undefined" class="row">
+				<forum-comment-list :forumCommentList="forumComments" />
 			</div>
 			<div class="row">
-				<forum-comment-list />
-			</div>
-			<div class="row">
-				<forum-comment-formular />
+				<forum-comment-formular :forumPostId="forumPostId" />
 			</div>
 		</div>
 	</div>

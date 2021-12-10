@@ -2,8 +2,14 @@
 	<div class="col-10 offset-1">
 		<div class="row">
 			<ul>
-				<li v-for="post in posts" :key="post">
-					<forum-post :post="post" />
+				<li v-for="post in forumPostList" :key="post">
+					<router-link
+						:to="{
+							path: '/forum/' + post.forumCategory.title + '/' + post.forumPostId,
+						}"
+					>
+						<forum-post :post="post" />
+					</router-link>
 				</li>
 			</ul>
 		</div>

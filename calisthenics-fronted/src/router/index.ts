@@ -35,19 +35,21 @@ const routes: Array<RouteRecordRaw> = [
 		component: Forum,
 	},
 	{
-		path: "/forum/:forumCategoryId",
+		path: "/forum/:categoryId",
 		name: "Posts",
+		props: true,
 		component: ForumPosts,
+	},
+	{
+		path: "/forum/:categoryTitle/:forumPostId",
+		name: "Post",
+		props: true,
+		component: ForumComments,
 	},
 	{
 		path: "/registerCommunityMember",
 		name: "RegisterCommunityMember",
 		component: RegisterCommunityMember,
-	},
-	{
-		path: "/forumComments",
-		name: "ForumComments",
-		component: ForumComments,
 	},
 ];
 

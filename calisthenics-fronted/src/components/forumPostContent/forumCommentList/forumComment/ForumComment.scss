@@ -2,8 +2,38 @@
 @import "../../../../assets//styles/settings/vars.scss";
 
 .forumComment {
-	background-color: $color-cardbackground;
 	height: fit-content;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	margin-bottom: 3px;
+	margin-bottom: 30px;
+
+	&__description {
+		p {
+			padding: 20px;
+			margin: 0;
+		}
+		background-color: $color-cardbackground;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		@include font-raleway-regular;
+	}
+
+	&__authorAndDate {
+		margin-top: 10px;
+		display: flex;
+		justify-content: space-between;
+		align-content: center;
+	}
+
+	&__name {
+		@include font-raleway-regular;
+		color: $color-bluefont;
+		p {
+			margin: 0;
+		}
+	}
+
+	&__date {
+		@include font-raleway-regular;
+		p {
+			margin: 0;
+		}
+	}
 }
