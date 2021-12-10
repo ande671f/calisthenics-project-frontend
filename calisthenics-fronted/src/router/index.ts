@@ -1,10 +1,12 @@
 import Admin from "@/views/admin/Admin.vue";
+import Booking from "@/views/booking/Booking.vue";
 import Forum from "@/views/forum/Forum.vue";
 import ForumComments from "@/views/forumComments/ForumComments.vue";
 import ForumPosts from "@/views/forumPosts/ForumPosts.vue";
 import RegisterCommunityMember from "@/views/registerCommunityMember/RegisterCommunityMember.vue";
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 import Home from "../views/home/Home.vue";
+import InstructorOverview from "../views/instructor-overview/InstructorOverview.vue";
 import Login from "../views/login/Login.vue";
 import Register from "../views/register/Register.vue";
 
@@ -47,9 +49,19 @@ const routes: Array<RouteRecordRaw> = [
 		component: ForumComments,
 	},
 	{
+		path: "/booking",
+		name: "Booking",
+		component: Booking,
+	},
+	{
 		path: "/registerCommunityMember",
 		name: "RegisterCommunityMember",
 		component: RegisterCommunityMember,
+	},
+	{
+		path: "/instructors",
+		name: "Instructors",
+		component: InstructorOverview,
 	},
 ];
 

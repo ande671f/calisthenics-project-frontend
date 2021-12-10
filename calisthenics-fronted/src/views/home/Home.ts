@@ -4,10 +4,8 @@ import Hero from "@/components/hero/Hero.vue";
 import ReviewList from "@/components/reviewlist/ReviewList.vue";
 import { frontPageQuery } from "@/queries/FrontPageQuery";
 import cms from "@/resources/CMSResource";
-import { key } from "@/store";
 //import About from "@/components/about/About.vue";
-import { computed, defineComponent, onMounted, ref, watch } from "vue";
-import { useStore } from "vuex";
+import { defineComponent, onMounted, ref } from "vue";
 
 export default defineComponent({
 	name: "Home",
@@ -18,16 +16,6 @@ export default defineComponent({
 		ContactUs,
 	},
 	setup() {
-		const store = useStore(key);
-
-		const forumMember = computed(() => {
-			return store.state.forumMember;
-		});
-
-		watch(forumMember, (newValue, oldValue) => {
-			console.log("The new user value is: " + forumMember.value);
-		});
-
 		const frontPage = ref<IFrontPage>();
 
 		// getting frontpage query
@@ -46,7 +34,6 @@ export default defineComponent({
 
 		return {
 			frontPage,
-			forumMember,
 		};
 	},
 });

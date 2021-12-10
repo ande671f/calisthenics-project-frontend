@@ -38,7 +38,6 @@ export default defineComponent({
 				selectedForumMember.value?.communityMember!
 			).then((response) => {
 				if (selectedForumMember.value != null) {
-					alert("Bruger er opdateret");
 					console.log(response);
 				}
 			});

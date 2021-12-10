@@ -1,0 +1,115 @@
+@import "../../../assets/styles/settings/fonts.scss";
+@import "../../../assets//styles/settings/vars.scss";
+
+.workout {
+	padding: 0;
+	background-color: $color-cardbackground;
+	width: 375px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+	&__image {
+		img {
+			width: 100%;
+			height: 300px;
+		}
+	}
+
+	&__content {
+		padding: 32px;
+
+		&__title {
+			@include font-raleway-bold;
+			font-size: 20px;
+			margin-bottom: 10px;
+		}
+
+		&__content {
+			@include font-raleway-regular;
+		}
+	}
+
+	&__buttons {
+		display: flex;
+		justify-content: space-around;
+
+		button {
+			margin: 10px;
+			width: 100%;
+			height: 40px;
+		}
+
+		button:hover {
+			background: rgba(0, 0, 0, 0.2);
+		}
+	}
+}
+
+.popup {
+	background: rgba(0, 0, 0, 0.3);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card {
+	border: 3px solid #f1f1f1;
+	padding: 16px;
+	background: #fff;
+	width: 500px;
+	height: fit-content;
+
+	&__title {
+		@include font-raleway-bold;
+		font-size: 35px;
+		margin-bottom: 20px;
+	}
+
+	&__inputField {
+		margin-bottom: 20px;
+		label {
+			@include font-raleway-bold;
+			font-size: 20px;
+		}
+		input {
+			width: 100%;
+			padding: 16px;
+			font-style: italic;
+			border: none;
+			background-color: #f1f1f1;
+		}
+		textarea {
+			width: 100%;
+			padding: 16px;
+			font-style: italic;
+			border: none;
+			background-color: #f1f1f1;
+		}
+		select {
+			width: 100%;
+			padding: 16px;
+			font-style: italic;
+			border: none;
+			background-color: #f1f1f1;
+		}
+	}
+
+	&__close {
+		button {
+			@include font-raleway-bold;
+			color: white;
+			width: 100%;
+			height: 50px;
+			background: #ff3335;
+			border: none;
+		}
+
+		button:hover {
+			background: #ff0000;
+		}
+	}
+}

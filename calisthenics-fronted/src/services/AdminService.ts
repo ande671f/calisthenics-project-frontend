@@ -37,7 +37,10 @@ class AdminService {
 			address: "",
 			postalCode: "",
 			city: "",
+			isInstructor: false,
 			forumMemberId: id,
+
+			workouts: null,
 		};
 
 		return axios
