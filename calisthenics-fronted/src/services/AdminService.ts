@@ -76,6 +76,25 @@ class AdminService {
 				console.log(error);
 			});
 	}
+
+	// Forum related:
+	public async createForumCategory(id: string, title: string, description: string): Promise<IForumCategory> {
+		const controller = "ForumCategory";
+		const forumCategory: IForumCategory = {
+			forumCategoryId: id,
+			title: title,
+			description: description,
+		};
+
+		return axios
+			.post(`${this.baseURL}/${controller}`, forumCategory)
+			.then((response) => {
+				return response.data;
+			})
+			.catch((error) => {
+				console.log(error);
+			});
+	}
 }
 
 export default new AdminService();

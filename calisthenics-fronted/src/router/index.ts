@@ -1,6 +1,7 @@
 import Admin from "@/views/admin/Admin.vue";
 import Booking from "@/views/booking/Booking.vue";
 import Forum from "@/views/forum/Forum.vue";
+import ForumComments from "@/views/forumComments/ForumComments.vue";
 import ForumPosts from "@/views/forumPosts/ForumPosts.vue";
 import PersonalProgress from "@/views/personalProgress/PersonalProgress.vue";
 import RegisterCommunityMember from "@/views/registerCommunityMember/RegisterCommunityMember.vue";
@@ -37,9 +38,16 @@ const routes: Array<RouteRecordRaw> = [
 		component: Forum,
 	},
 	{
-		path: "/forum/:forumCategoryId",
+		path: "/forum/:categoryId",
 		name: "Posts",
+		props: true,
 		component: ForumPosts,
+	},
+	{
+		path: "/forum/:categoryTitle/:forumPostId",
+		name: "Post",
+		props: true,
+		component: ForumComments,
 	},
 	{
 		path: "/booking",

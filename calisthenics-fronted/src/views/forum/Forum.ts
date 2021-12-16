@@ -12,7 +12,8 @@ export default defineComponent({
 		PageHeader,
 	},
 	setup() {
-		const title = "Forum";
+		const pageHeadertitle = "Forum";
+		const titleLoading = "Loading...";
 		const forumCategoryList = ref<IForumCategory[]>();
 
 		const getForumCategoryList = async () => {
@@ -25,7 +26,8 @@ export default defineComponent({
 		});
 
 		return {
-			title,
+			pageHeadertitle,
+			titleLoading,
 			forumCategoryList,
 		};
 	},

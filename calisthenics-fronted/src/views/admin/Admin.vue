@@ -67,6 +67,20 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="row">
+			<h2>Category</h2>
+			<h4>hll</h4>
+			<div v-if="newForumCategory != undefined">
+				<input v-model="newForumCategory.forumCategoryId" placeholder="category id" id="forumCategoryId" />
+				<br />
+				<input v-model="newForumCategory.title" placeholder="category title" id="title" />
+				<br />
+				<input v-model="newForumCategory.description" placeholder="category description" id="description" />
+				<br />
+				<button @click="createForumCategory">Add category</button>
+			</div>
+		</div>
 	</div>
 </template>
 

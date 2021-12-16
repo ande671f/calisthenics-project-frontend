@@ -1,12 +1,13 @@
 import ForumPostList from "@/components/forumPostList/ForumPostList.vue";
 import NavigationBlack from "@/components/navigation/navigationBlack/NavigationBlack.vue";
 import PageHeader from "@/components/pageHeader/PageHeader.vue";
-import { defineComponent, ref } from "vue";
+import ForumService from "@/services/ForumService";
+import { defineComponent, onMounted, ref } from "vue";
 
 export default defineComponent({
 	name: "ForumPosts",
 	props: {
-		forumCategoryId: String,
+		categoryId: String,
 	},
 	components: {
 		NavigationBlack,
@@ -16,12 +17,27 @@ export default defineComponent({
 
 	setup(props) {
 		const pageHeaderTitle = "Posts";
-		const forumCategoryId = ref<string>(props.forumCategoryId!);
+		const titleLoading = "Loading...";
+		const forumCategoryId = ref<string>(props.categoryId!);
 		console.log("forumCategoryId", forumCategoryId.value);
+		const forumPostList = ref<IForumPost[]>();
+
+		//metoder:
+		const getForumPostList = async () => {
+			ForumService.getForumPostsByCategoryId(forumCategoryId.value).then((response) => {
+				forumPostList.value = response;
+			});
+		};
+
+		onMounted(() => {
+			getForumPostList();
+		});
 
 		return {
 			pageHeaderTitle,
+			titleLoading,
 			forumCategoryId,
+			forumPostList,
 		};
 	},
 });
