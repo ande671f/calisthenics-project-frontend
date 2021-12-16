@@ -1,0 +1,19 @@
+@import "../../assets/styles/settings/fonts.scss";
+@import "../../assets//styles/settings/vars.scss";
+
+.weight-wrapper {
+	background: $color-cardbackground;
+	height: 470px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+	&__title {
+		padding: 10px;
+		@include font-raleway-bold;
+		text-align: center;
+	}
+
+	&__form {
+		padding: 0 16px 0 16px;
+		margin-bottom: 20px;
+	}
+}

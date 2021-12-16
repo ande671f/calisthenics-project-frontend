@@ -1,8 +1,13 @@
-@import "vendors/_bootstrap-grid.scss";
+@import "vendors/bootstrap-grid.scss";
+@import "vendors/bootstrap-reboot.scss";
+@import "vendors/bootstrap-utilities.scss";
+@import "vendors/bootstrap.scss";
+
 @import "settings/_vars.scss";
 @import "settings/_fonts.scss";
 @import "settings/_mixins.scss";
 @import "base/_grid.scss";
+
 body {
 	background-color: #e0e1e2;
 	overflow-x: hidden;

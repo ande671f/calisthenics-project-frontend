@@ -25,7 +25,7 @@
 						</div>
 						<div class="registerFormular__inputField col-12">
 							<div class="">
-								<input type="text" placeholder="Fødselsdato..." />
+								<input type="date" placeholder="Fødselsdato..." />
 							</div>
 						</div>
 						<div class="registerFormular__inputField col-12">
@@ -36,11 +36,6 @@
 						<div class="registerFormular__inputField col-12">
 							<div class="">
 								<input type="text" placeholder="Email..." />
-							</div>
-						</div>
-						<div class="registerFormular__inputField col-12">
-							<div class="">
-								<input type="text" placeholder="Adgangskode..." />
 							</div>
 						</div>
 						<div class="registerFormular__inputField col-12">

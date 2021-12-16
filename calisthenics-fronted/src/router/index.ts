@@ -2,6 +2,7 @@ import Admin from "@/views/admin/Admin.vue";
 import Booking from "@/views/booking/Booking.vue";
 import Forum from "@/views/forum/Forum.vue";
 import ForumPosts from "@/views/forumPosts/ForumPosts.vue";
+import PersonalProgress from "@/views/personalProgress/PersonalProgress.vue";
 import RegisterCommunityMember from "@/views/registerCommunityMember/RegisterCommunityMember.vue";
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 import Home from "../views/home/Home.vue";
@@ -54,6 +55,11 @@ const routes: Array<RouteRecordRaw> = [
 		path: "/instructors",
 		name: "Instructors",
 		component: InstructorOverview,
+	},
+	{
+		path: "/personalProgress",
+		name: "PersonalProgress",
+		component: PersonalProgress,
 	},
 ];
 

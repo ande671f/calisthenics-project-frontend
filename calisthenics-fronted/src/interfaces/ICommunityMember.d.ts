@@ -8,4 +8,5 @@ declare interface ICommunityMember {
 	forumMemberId: string;
 
 	workouts: IWorkout[] | null;
+	personalProgress: IPersonalProgress | null;
 }

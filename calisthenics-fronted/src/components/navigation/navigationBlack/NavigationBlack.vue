@@ -6,15 +6,17 @@
 			</div>
 			<div class="col-7">
 				<div class="navigation__menuItems">
-					<router-link to="/" class="navigation__menuItem">TRÆNERE</router-link>
+					<router-link to="/" class="navigation__menuItem">INSTRUKTØRER</router-link>
 					<router-link to="/forum" class="navigation__menuItem">FORUM</router-link>
-					<router-link to="/" class="navigation__menuItem">BLIV MEDLEM</router-link>
-					<router-link to="/" class="navigation__menuItem">FORUM</router-link>
-					<router-link to="/registerCommunityMember" class="navigation__menuItem">BLIV MEDLEM</router-link>
 					<span v-if="loggedInForumMember != null">
+						<router-link to="/registerCommunityMember" class="navigation__menuItem"
+							>BLIV FORENINGSMEDLEM</router-link
+						>
+						<router-link to="/forum" class="navigation__menuItem">BOOKING</router-link>
 						<button @click="logout">LOG UD</button>
 					</span>
 					<span v-else>
+						<router-link to="/" class="navigation__menuItem">BLIV MEDLEM</router-link>
 						<router-link to="/login" class="navigation__menuItem">LOGIN</router-link>
 						<router-link to="/register" class="navigation__menuItem">OPRET</router-link>
 					</span>

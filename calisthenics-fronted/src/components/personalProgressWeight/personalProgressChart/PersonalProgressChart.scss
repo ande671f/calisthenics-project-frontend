@@ -1,0 +1,14 @@
+@import "../../../assets/styles/settings/fonts.scss";
+@import "../../../assets//styles/settings/vars.scss";
+
+.chart-wrapper {
+	background: #eaeaea;
+	height: 470px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+	&__title {
+		padding: 10px;
+		@include font-raleway-bold;
+		text-align: center;
+	}
+}

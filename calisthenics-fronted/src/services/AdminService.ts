@@ -39,7 +39,7 @@ class AdminService {
 			city: "",
 			isInstructor: false,
 			forumMemberId: id,
-
+			personalProgress: null,
 			workouts: null,
 		};
 

@@ -1,6 +1,7 @@
 import "@/assets/styles/site.scss";
 import { createApp } from "vue";
 import App from "./App.vue";
+import "./plugins/chart.js";
 import router from "./router";
 import { key, store } from "./store";
 
